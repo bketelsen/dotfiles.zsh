@@ -1,0 +1,19 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Brian Ketelsen
+	mail = bketelsen@gmail.com
+	email = bketelsen@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[include]
+	path = /Users/bjk/.gitconfig.local
+[dotfiles]
+	managed = true
+[credential]
+	helper = osxkeychain
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "

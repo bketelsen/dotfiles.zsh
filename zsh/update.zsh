@@ -1,23 +1,23 @@
 function update {
-    if [ "$NICK_OS" = "ubuntu" ]; then
+    if [ "$BJK_OS" = "ubuntu" ]; then
         if [ "$(command -v apt)" ]; then
             sudo apt update
             sudo apt upgrade -y
             sudo apt autoremove -y
         fi
-        if [ "$(command -v snap)" ] && [ "$NICK_WSL2" != "true" ]; then
+        if [ "$(command -v snap)" ] && [ "$BJK_WSL2" != "true" ]; then
             sudo snap refresh
         fi
-    elif [ "$NICK_OS" = "fedora" ] && [ "$(command -v dnf)" ]; then
+    elif [ "$BJK_OS" = "fedora" ] && [ "$(command -v dnf)" ]; then
         sudo dnf upgrade --refresh
         sudo dnf autoremove
-    elif [ "$NICK_OS" = "opensuse-tumbleweed" ] && [ "$(command -v zypper)" ]; then
+    elif [ "$BJK_OS" = "opensuse-tumbleweed" ] && [ "$(command -v zypper)" ]; then
         sudo zypper update -y
-    elif [ "$NICK_OS" = "darwin" ] && [ "$(command -v brew)" ]; then
+    elif [ "$BJK_OS" = "darwin" ] && [ "$(command -v brew)" ]; then
         brew update
         brew upgrade
         brew cleanup
-        brew bundle dump --force --file $NICK_DOTFILES/darwin/brewfile-$NICK_ARCH.rb
+        brew bundle dump --force --file $BJK_DOTFILES/darwin/brewfile-$BJK_ARCH.rb
     fi
 
     if [ "$(command -v rustup)" ]; then
@@ -29,10 +29,6 @@ function update {
             cargo install cargo-update
         fi
         cargo install-update -a
-        cargo install --list | grep -o "^\S*\S" | jq -Rn '[inputs]' > $NICK_DOTFILES/crates.json
-    fi
-
-    if [ -f $HOME/.local/share/nvim/site/autoload/plug.vim ] && [ "$(command -v nvim)" ]; then
-        nvim +PlugUpgrade +PlugUpdate +PlugClean +qall
+        cargo install --list | grep -o "^\S*\S" | jq -Rn '[inputs]' > $BJK_DOTFILES/crates.json
     fi
 }

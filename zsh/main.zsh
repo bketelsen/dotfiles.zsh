@@ -15,8 +15,8 @@ fi
 
 alias sz="source $HOME/.zshrc"
 
-alias dotfiles="cd $NICK_DOTFILES"
-alias scripts="cd $NICK_DOTFILES/scripts/"
+alias dotfiles="cd $BJK_DOTFILES"
+alias scripts="cd $BJK_DOTFILES/scripts/"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -123,7 +123,7 @@ function strip-and-size {
 
 function directory-sizes {
     local SORT=sort
-    if [ "$NICK_OS" = darwin ]; then
+    if [ "$BJK_OS" = darwin ]; then
         if [ ! $(command -v gsort) ]; then
             echo "gsort required: brew install coreutils"
             return

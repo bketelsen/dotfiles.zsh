@@ -1,8 +1,8 @@
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
-export PATH=$PATH:/usr/local/go/bin
-export PATH=${GOPATH//://bin:}/bin:$PATH
+export GOPATH=${HOME}
+
+path=("/usr/local/go/bin" $path)
+path=("${GOPATH}/bin" $path)
+
 
 if [ "$(command -v rg)" ]; then
     alias rg-go="rg -g '*.go' -g '!zz*.go' -g '!*generated' --sort path"

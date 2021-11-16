@@ -1,4 +1,4 @@
-export PATH=$PATH:$HOME/.cargo/bin
+path=("${HOME}/.cargo/bin" $path)
 
 if [ "$(command -v cargo)" ]; then
     alias cr="cargo run --"
@@ -42,20 +42,20 @@ function cbr {
 }
 
 function rust-setup {
-    if [ "$NICK_OS" = "darwin" ]; then
-        if [ "$NICK_ARCH" = "x86_64" ]; then
+    if [ "$BJK_OS" = "darwin" ]; then
+        if [ "$BJK_ARCH" = "x86_64" ]; then
             rustup toolchain install stable-x86_64-apple-darwin
             rustup toolchain install nightly-x86_64-apple-darwin
             rustup default stable-x86_64-apple-darwin
-        elif [ "$NICK_ARCH" = "arm64" ]; then
+        elif [ "$BJK_ARCH" = "arm64" ]; then
             rustup toolchain install stable-aarch64-apple-darwin
             rustup toolchain install nightly-aarch64-apple-darwin
             rustup default stable-aarch64-apple-darwin
         fi
-    elif [ "$NICK_OS" = "linux" ] && [ "$NICK_ARCH" = "x86_64" ]; then
+    elif [ "$BJK_OS" = "linux" ] && [ "$BJK_ARCH" = "x86_64" ]; then
         rustup toolchain install stable-x86_64-unknown-linux-gnu
         rustup toolchain install nightly-x86_64-unknown-linux-gnu
         rustup default stable-x86_64-unknown-linux-gnu
     fi
-    cargo install $(jq -r ".[]" $NICK_DOTFILES/crates.json)
+    cargo install $(jq -r ".[]" $BJK_DOTFILES/crates.json)
 }

@@ -5,6 +5,6 @@ if [ "$(command -v zypper)" ]; then
 fi
 
 # Upstream issue: https://github.com/microsoft/WSL/issues/2530#issuecomment-879597974
-if [ "$NICK_WSL2" = "true" ] && [ "$NICK_OS" = "opensuse-tumbleweed" ]; then
+if [ "$BJK_WSL2" = "true" ] && [ "$BJK_OS" = "opensuse-tumbleweed" ]; then
     export TMUX_TMPDIR='/tmp'
 fi

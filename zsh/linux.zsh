@@ -1,5 +1,5 @@
-if [ "$NICK_LINUX" = "true" ]; then
-    if [ "$NICK_WSL2" != "true" ]; then
+if [ "$BJK_LINUX" = "true" ]; then
+    if [ "$BJK_WSL2" != "true" ]; then
         alias bye="sudo shutdown now"
         alias check-power="powerstat -R -c -z"
         alias check-firmware="fwupdmgr get-devices"

@@ -28,7 +28,7 @@ alias branch-new="git checkout -b"
 alias branch-delete="git branch -d"
 
 alias squash='printf "git reset --soft HEAD~N\n"'
-alias git-checkout-remote='printf "git checkout -b branch origin/branch\n"' 
+alias git-checkout-remote='printf "git checkout -b branch origin/branch\n"'
 alias git-delete-remote-tag='printf "git push --delete origin <tag>\n"'
 
 alias git-reset-undo="git reset 'HEAD@{1}'"
@@ -87,11 +87,11 @@ function git-diff-check-permissions {
 
 function github-clone {
     if [ ! $1 ]; then
-        echo "required argument(s): <repo-under-nickgerace> <optional-destination-path>"
+        echo "required argument(s): <repo-under-bketelsen> <optional-destination-path>"
     elif [ ! $2 ]; then
-        git clone git@github.com:nickgerace/${1}
+        git clone git@github.com:bketelsen/${1}
     else
-        git clone git@github.com:nickgerace/${1} ${2}
+        git clone git@github.com:bketelsen/${1} ${2}
     fi
 }
 
