@@ -10,7 +10,7 @@ if [ "$(command -v shasum)" ]; then
 fi
 
 for i in {1..5}; do
-    wget https://github.com/nickgerace/${1}/archive/${2}.tar.gz > /dev/null 2>&1
+    wget https://github.com/bketelsen/${1}/archive/${2}.tar.gz > /dev/null 2>&1
     if [ "$SHA256SUM" = true ]; then
         sha256sum ${2}.tar.gz
     else

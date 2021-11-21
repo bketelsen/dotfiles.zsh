@@ -1,3 +1,5 @@
+source "${HOME}/.zprofile"
+
 # Add autocomplete functionality before everything else.
 # Solution: https://github.com/kubernetes/kubectl/issues/125#issuecomment-351653836
 export HOMEBREW_PREFIX=$(brew --prefix)
@@ -18,7 +20,6 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
 
-source "${HOME}/.zprofile"
 
 
 source "$HOME/.zinit/bin/zinit.zsh"
