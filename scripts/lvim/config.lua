@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "doom-one"
+lvim.colorscheme = "onedarker"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -63,7 +63,6 @@ lvim.builtin.nvimtree.show_icons.git = 0
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
-  "go",
   "javascript",
   "json",
   "lua",
@@ -149,52 +148,13 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 
 -- Additional Plugins
- lvim.plugins = {
-      {"WhoIsSethDaniel/goldsmith.nvim"},
-  {"nvim-treesitter/nvim-treesitter-textobjects"},
-  {
-    'NTBBloodbath/doom-one.nvim',
-    config = function()
-        require('doom-one').setup({
-            cursor_coloring = false,
-            terminal_colors = false,
-            italic_comments = false,
-            enable_treesitter = true,
-            transparent_background = false,
-            pumblend = {
-                enable = true,
-                transparency_amount = 20,
-            },
-            plugins_integrations = {
-                neorg = true,
-                barbar = true,
-                bufferline = false,
-                gitgutter = false,
-                gitsigns = true,
-                telescope = false,
-                neogit = true,
-                nvim_tree = true,
-                dashboard = true,
-                startify = true,
-                whichkey = true,
-                indent_blankline = true,
-                vim_illuminate = true,
-                lspsaga = false,
-            },
-        })
-    end,
-}
+-- lvim.plugins = {
+--     {"folke/tokyonight.nvim"},
 --     {
 --       "folke/trouble.nvim",
 --       cmd = "TroubleToggle",
 --     },
- }
-
--- toggle terminal
-
-lvim.builtin.which_key.mappings["t"] = {
-  "<cmd>ToggleTerm<CR>", "Terminal"
-}
+-- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {

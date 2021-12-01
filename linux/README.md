@@ -37,7 +37,7 @@ chsh -s ${ZSH}
 Now, install the previous `Brewfile`.
 
 ```sh
-brew bundle install --no-lock --file $BJK_DOTFILES/linux/brewfile-$BJK_ARCH.rb
+brew bundle install --no-lock --file $BJK_DOTFILES/linux/brewfile-linux.rb
 ```
 
 ## Setup Rust
