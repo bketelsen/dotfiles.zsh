@@ -57,5 +57,4 @@ function rust-setup {
         rustup toolchain install nightly-x86_64-unknown-linux-gnu
         rustup default stable-x86_64-unknown-linux-gnu
     fi
-    cargo install $(jq -r ".[]" $BJK_DOTFILES/crates.json)
 }

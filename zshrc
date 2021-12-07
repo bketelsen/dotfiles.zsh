@@ -1,3 +1,4 @@
+# make sure brew is sourced before trying to do anything else
 source "${HOME}/.zprofile"
 
 # Add autocomplete functionality before everything else.

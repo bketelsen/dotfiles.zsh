@@ -46,3 +46,11 @@ Navigate to [rustup.sh](https://rustup.sh) and install it.
 Add the following arguments to the installation script: `-s -- --no-modify-path -y`
 
 With the dotfiles loaded and `zsh` as your shell, execute the loaded function: `rust-setup`
+
+## Cargo Update
+
+```
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include"
+cargo install cargo-update
+```
