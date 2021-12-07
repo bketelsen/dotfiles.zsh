@@ -89,8 +89,5 @@ font_url='https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraC
 
 pre-install
 install-docker
-install-starship
-install-rust
-install-fly
 install-tailscale
 post-install
