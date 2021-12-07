@@ -1,5 +1,5 @@
 function update {
-    if [ "$BJK_OS" = "ubuntu" ]; then
+    if [ "$BJK_DEB" = "true" ]; then
         if [ "$(command -v apt)" ]; then
             sudo apt update
             sudo apt upgrade -y
@@ -19,7 +19,12 @@ function update {
         brew cleanup
         brew bundle dump --force --file $BJK_DOTFILES/darwin/brewfile-$BJK_ARCH.rb
     fi
-
+    if [ "$BJK_LINUX" = "true" ] && [ "$(command -v brew)" ]; then
+        brew update
+        brew upgrade
+        brew cleanup
+        brew bundle dump --force --file $BJK_DOTFILES/linux/brewfile-$BJK_ARCH.rb
+    fi
     if [ "$(command -v rustup)" ]; then
         rustup update
     fi
