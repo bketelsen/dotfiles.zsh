@@ -20,7 +20,7 @@ After installation, you may need to execute `eval "$(/opt/homebrew/bin/brew shel
 Finally, install some base packages with `brew`:
 
 ```sh
-brew install zsh git bash make jq neovim vim curl wget
+brew install zsh gcc git bash make jq neovim vim curl wget
 ```
 
 ## Setup Dotfiles
