@@ -33,3 +33,4 @@ alias git-delete-remote-tag='printf "git push --delete origin <tag>\n"'
 
 alias git-reset-undo="git reset 'HEAD@{1}'"
 alias git-history="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias code='code-insiders'

@@ -17,12 +17,16 @@ elif [ -f /etc/os-release ]; then
 
     if [ "$OS_RELEASE_ID" = "ubuntu" ] || [ "$OS_RELEASE_ID" = "pop" ] ; then
         export BJK_DEB="true"
+        export BJK_LINUX="true"
     else
         export BJK_DEB="false"
     fi
 
     if [ -f /proc/sys/kernel/osrelease ] && [ $(grep "WSL2" /proc/sys/kernel/osrelease) ]; then
         export BJK_WSL2="true"
+        export BJK_LINUX="true"
+
+
     else
         export BJK_WSL2="false"
     fi
