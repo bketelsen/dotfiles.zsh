@@ -1,0 +1,16 @@
+actions:
+
+  - action: file.link
+    from: bash_logout
+    to: "{{ user.home_dir }}/.bash_logout"
+
+  - action: file.link
+    from: bashrc
+    to: "{{ user.home_dir }}/.bashrc"
+
+  - action: file.link
+    from: profile
+    to: "{{ user.home_dir }}/.profile"
+
+depends:
+- base

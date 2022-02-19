@@ -38,16 +38,10 @@ function pre-install {
         wget \
         git \
         make \
-        bat \
         autoconf \
         tmux \
         byobu \
-        direnv \
-        exa \
-        fd-find \
-        fzf \
         htop \
-        jq \
         gcc \
         git \
         pkg-config \
@@ -105,10 +99,10 @@ function post-install {
 
 #font_url='https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip'; font_name=${font_url##*/}; wget ${font_url} && unzip ${font_name} -d ~/.fonts && fc-cache -fv ;
 
-#pre-install
+pre-install
 install-docker
 install-tailscale
 post-install
 
-#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 

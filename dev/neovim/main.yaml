@@ -1,0 +1,26 @@
+actions:
+  - action: package.install
+    repository: ppa:neovim-ppa/stable
+    name:
+      - neovim
+
+  - action: command.run
+    dir: "{{ user.home_dir }}/.config"
+    command: git
+    args:
+    - clone
+    - https://github.com/kabinspace/AstroVim
+    - nvim
+
+  - action: command.run
+    dir: "{{ user.home_dir }}/.config/nvim/lua/user/"
+    command: rm
+    args:
+    - settings.lua
+
+  - action: file.link
+    from: settings.lua
+    to: "{{ user.home_dir }}/.config/nvim/lua/user/settings.lua"
+
+depends:
+- git

@@ -1,0 +1,4 @@
+actions:
+  - action: file.link
+    from: editorconfig
+    to: "{{ user.home_dir }}/.editorconfig"

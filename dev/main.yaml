@@ -1,0 +1,9 @@
+actions:
+  - action: package.install
+    name:
+      - build-essential
+      - make
+      - autoconf 
+      - gcc
+      - pkg-config
+      - libssl-dev

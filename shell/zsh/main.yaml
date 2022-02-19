@@ -1,0 +1,23 @@
+actions:
+  - action: package.install
+    name:
+      - zsh
+
+  - action: file.link
+    from: includes
+    to: "{{ user.home_dir }}/.zsh/includes"
+
+  - action: file.link
+    from: zshrc
+    to: "{{ user.home_dir }}/.zshrc"
+
+  - action: file.link
+    from: zshenv
+    to: "{{ user.home_dir }}/.zshenv"
+
+  - action: file.link
+    from: zprofile
+    to: "{{ user.home_dir }}/.zprofile"
+
+depends:
+- base

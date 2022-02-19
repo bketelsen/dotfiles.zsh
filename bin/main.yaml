@@ -1,0 +1,13 @@
+actions:
+
+  - action: file.link
+    from: config.json
+    to: "{{ user.home_dir }}/.config/bin/config.json"
+
+  - action: command.run
+    dir: .
+    command: bin
+    args:
+    - ensure
+depends:
+- base

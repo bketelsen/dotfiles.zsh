@@ -1,0 +1,27 @@
+actions:
+  - action: package.install
+    name:
+      - curl
+      - wget
+      - tmux
+      - htop
+  - action: command.run
+    dir: .
+    command: wget
+    args:
+    - https://github.com/marcosnils/bin/releases/download/v0.13.0/bin_0.13.0_Linux_x86_64
+    - -O
+    - localbin
+
+  - action: command.run
+    dir: .
+    command: chmod
+    args:
+    - +x
+    - localbin
+  - action: command.run
+    dir: .
+    command: ./localbin
+    args:
+    - install
+    - github.com/marcosnils/bin

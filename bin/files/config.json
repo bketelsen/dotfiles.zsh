@@ -1,0 +1,104 @@
+{
+    "default_path": "/home/bjk/bin",
+    "bins": {
+        "/home/bjk/bin/bat": {
+            "path": "/home/bjk/bin/bat",
+            "remote_name": "bat",
+            "version": "v0.19.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/sharkdp/bat",
+            "provider": "",
+            "package_path": ""
+        },
+        "/home/bjk/bin/delta": {
+            "path": "/home/bjk/bin/delta",
+            "remote_name": "delta",
+            "version": "0.12.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/dandavison/delta",
+            "provider": "github",
+            "package_path": "delta-0.12.0-x86_64-unknown-linux-musl/delta"
+        },
+        "/home/bjk/bin/duf": {
+            "path": "/home/bjk/bin/duf",
+            "remote_name": "duf",
+            "version": "v0.8.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/muesli/duf",
+            "provider": "github",
+            "package_path": "duf"
+        },
+        "/home/bjk/bin/dust": {
+            "path": "/home/bjk/bin/dust",
+            "remote_name": "dust",
+            "version": "v0.7.5",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/bootandy/dust",
+            "provider": "github",
+            "package_path": "dust-v0.7.5-x86_64-unknown-linux-musl/dust"
+        },
+        "/home/bjk/bin/exa": {
+            "path": "/home/bjk/bin/exa",
+            "remote_name": "exa",
+            "version": "v0.10.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/ogham/exa",
+            "provider": "github",
+            "package_path": "bin/exa"
+        },
+        "/home/bjk/bin/fd": {
+            "path": "/home/bjk/bin/fd",
+            "remote_name": "fd",
+            "version": "v8.3.2",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/sharkdp/fd",
+            "provider": "github",
+            "package_path": "fd-v8.3.2-x86_64-unknown-linux-musl/fd"
+        },
+        "/home/bjk/bin/fzf": {
+            "path": "/home/bjk/bin/fzf",
+            "remote_name": "fzf",
+            "version": "0.29.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/junegunn/fzf",
+            "provider": "github",
+            "package_path": "fzf"
+        },
+        "/home/bjk/bin/jq": {
+            "path": "/home/bjk/bin/jq",
+            "remote_name": "jq",
+            "version": "jq-1.6",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/stedolan/jq",
+            "provider": "github",
+            "package_path": ""
+        },
+        "/home/bjk/bin/procs": {
+            "path": "/home/bjk/bin/procs",
+            "remote_name": "procs",
+            "version": "v0.12.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/dalance/procs",
+            "provider": "github",
+            "package_path": "procs"
+        },
+        "/home/bjk/bin/rg": {
+            "path": "/home/bjk/bin/rg",
+            "remote_name": "rg",
+            "version": "13.0.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/burntsushi/ripgrep",
+            "provider": "github",
+            "package_path": "ripgrep-13.0.0-x86_64-unknown-linux-musl/rg"
+        },
+        "/home/bjk/bin/sops": {
+            "path": "/home/bjk/bin/sops",
+            "remote_name": "sops",
+            "version": "v3.7.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/mozilla/sops",
+            "provider": "github",
+            "package_path": ""
+        }
+    }
+}
