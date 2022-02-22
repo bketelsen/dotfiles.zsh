@@ -10,7 +10,7 @@ if (( ! ${+ZPROFILE_LOADED} )); then
     source "$HOME/.zprofile"
 fi
 
-
+path=(~/bin $path)
 
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit

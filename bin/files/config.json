@@ -64,6 +64,15 @@
             "provider": "github",
             "package_path": "fzf"
         },
+        "/home/bjk/bin/hugo": {
+            "path": "/home/bjk/bin/hugo",
+            "remote_name": "hugo",
+            "version": "v0.92.2",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/gohugoio/hugo",
+            "provider": "github",
+            "package_path": "hugo"
+        },
         "/home/bjk/bin/jq": {
             "path": "/home/bjk/bin/jq",
             "remote_name": "jq",
@@ -72,6 +81,15 @@
             "url": "github.com/stedolan/jq",
             "provider": "github",
             "package_path": ""
+        },
+        "/home/bjk/bin/onefetch": {
+            "path": "/home/bjk/bin/onefetch",
+            "remote_name": "onefetch",
+            "version": "v2.11.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/o2sh/onefetch",
+            "provider": "github",
+            "package_path": "./onefetch"
         },
         "/home/bjk/bin/procs": {
             "path": "/home/bjk/bin/procs",
