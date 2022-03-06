@@ -1,3 +1,5 @@
 [
-  "cargo-update"
+  "cargo-update",
+  "ddh",
+  "unison-fsmonitor"
 ]

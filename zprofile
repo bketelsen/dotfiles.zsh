@@ -7,3 +7,5 @@ if [[ -a /home/linuxbrew/.linuxbrew/bin ]]; then
 fi
 
 export ZPROFILE_LOADED=1
+
+export PATH="/Users/bjk/Library/Application Support/edgedb/bin:$PATH"

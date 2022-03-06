@@ -1,5 +1,5 @@
 export TERM=xterm-256color
-export EDITOR=lvim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 export PATH=$PATH:/usr/local/bin
