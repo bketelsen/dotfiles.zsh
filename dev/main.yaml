@@ -1,9 +1,14 @@
 actions:
   - action: package.install
-    name:
-      - build-essential
-      - make
-      - autoconf 
-      - gcc
-      - pkg-config
-      - libssl-dev
+    name: build-essential
+  - action: package.install
+    name: make
+  - action: package.install
+    name: autoconf
+  - action: package.install
+    name: gcc
+  - action: package.install
+    name: pkg-config
+  - action: package.install
+    name: libssl-dev
+

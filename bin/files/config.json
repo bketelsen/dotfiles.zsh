@@ -1,6 +1,15 @@
 {
     "default_path": "/home/bjk/bin",
     "bins": {
+        "/home/bjk/bin": {
+            "path": "/home/bjk/bin",
+            "remote_name": "bin",
+            "version": "v0.13.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/marcosnils/bin",
+            "provider": "github",
+            "package_path": ""
+        },
         "/home/bjk/bin/bat": {
             "path": "/home/bjk/bin/bat",
             "remote_name": "bat",
@@ -8,6 +17,15 @@
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/sharkdp/bat",
             "provider": "",
+            "package_path": ""
+        },
+        "/home/bjk/bin/bin": {
+            "path": "/home/bjk/bin/bin",
+            "remote_name": "bin",
+            "version": "v0.13.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/marcosnils/bin",
+            "provider": "github",
             "package_path": ""
         },
         "/home/bjk/bin/delta": {
@@ -61,8 +79,8 @@
             "version": "0.29.0",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/junegunn/fzf",
-            "provider": "github",
-            "package_path": "fzf"
+            "provider": "",
+            "package_path": ""
         },
         "/home/bjk/bin/hugo": {
             "path": "/home/bjk/bin/hugo",
@@ -115,7 +133,7 @@
             "version": "v3.7.1",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/mozilla/sops",
-            "provider": "github",
+            "provider": "",
             "package_path": ""
         }
     }

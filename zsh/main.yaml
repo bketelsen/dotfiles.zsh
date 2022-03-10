@@ -1,7 +1,6 @@
 actions:
   - action: package.install
-    name:
-      - zsh
+    name: zsh
 
   - action: file.link
     from: includes
@@ -19,5 +18,11 @@ actions:
     from: zprofile
     to: "{{ user.home_dir }}/.zprofile"
 
+  - action: command.run
+    dir: .
+    command: sh
+    args:
+    - -c
+    - "$(curl -fsSL https://starship.rs/install.sh)"
 depends:
 - base

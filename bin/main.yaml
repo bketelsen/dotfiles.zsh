@@ -11,3 +11,4 @@ actions:
     - ensure
 depends:
 - base
+- bash 

@@ -1,0 +1,3 @@
+source ~/.zprofile
+export UNISONLOCALHOSTNAME=beast
+. "$HOME/.cargo/env"
